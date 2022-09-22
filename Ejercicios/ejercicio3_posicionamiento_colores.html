@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento de colores</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(138, 228, 186);
+        }
+
+
+        #container{
+            width: 600px;
+            height: 600px;
+            background-image: url(https://image.slidesharecdn.com/circulosdecolores1-151001075614-lva1-app6891/95/circulos-de-colores-1-1-638.jpg?cb=1443686190);
+            background-position: center;
+            background-repeat: no-repeat;
+            position:relative;
+            box-sizing: border-box;
+        }
+        .Bola-roja{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            
+
+            border-radius: 50%;
+            background: radial-gradient(circle,rgba(248,11,11,1) 0%, rgba(83,33,124,1) 100%);
+
+        }
+        .Bola-azul{
+            position: absolute;
+            width:30px;
+            height:30px;
+            
+            border-radius: 50%;
+            background:radial-gradient(rgb(23, 30, 241)0%, rgb(111, 67, 254) 100%);
+        }
+        .Bola-amarilla{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            
+            border-radius: 50%;
+            background:radial-gradient(rgba(254,250,67,1)0%, rgb(169, 105, 21) 100%);
+        }
+        .Bola-verde{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            
+
+            border-radius: 50%;
+            background: radial-gradient(rgba(10,187,13,1)0%, rgba(154,181,186,1) 100%);
+        }
+        .r0{top:10px;left: 30px;}
+        .r1{top:140px;left:80px; }
+        .r2{top:428px;left:180px;}
+        .r3{top:235px;left:285px;}
+        .r4{top:140px;left:390px;}
+        .r5{top:330px;left:490px;}
+
+        .a0{top:10px;left:65px;}
+        .a1{top:428px;left:75px;}
+        .a2{top:235px;left:180px;}
+        .a3{top:330px;left:285px;}
+        .a4{top:428px;left:390px;}
+        .a5{top:140px;left:490px ;}
+
+        .am0{top:10px;left:137px ;}
+        .am1{top:140px;left:180px ;}
+        .am2{top:330px;left:75px ;}
+        .am3{top:428px;left:285px ;}
+        .am4{top:330px;left:390px ;}
+        .am5{top:235px;left:490px ;}
+
+        .v0{top:10px;left:100px ;}
+        .v1{top:235px;left:77px ;}
+        .v2{top:330px;left:180px ;}
+        .v3{top:140px;left:285px ;}
+        .v4{top:235px;left: 390px;}
+        .v5{top:428px;left:490px ;}
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Posicionamiento de circulos :</h1>
+    <p>En este ejercicio vamos a posicionar elementos dentro de los circulos para practicar el tema de posicionamiento con: </p>
+    <ul>
+        <li> <b> Relative</b></li>
+        <li> <b> Absolute</b></li>
+        <li> <b> Sticky </b></li>
+        <li> <b> Fixed </b></li>
+    </ul>
+    <p>Con los siguientes colores: </p>
+    
+    <div id="container">
+        <div class="Bola-roja r0"></div>
+        <div class="Bola-roja r1"></div>
+        <div class="Bola-roja r2"></div>
+        <div class="Bola-roja r3"></div>
+        <div class="Bola-roja r4"></div>
+        <div class="Bola-roja r5"></div>
+
+        <div class="Bola-azul a0"></div>
+        <div class="Bola-azul a1"></div>
+        <div class="Bola-azul a2"></div>
+        <div class="Bola-azul a3"></div>
+        <div class="Bola-azul a4"></div>
+        <div class="Bola-azul a5"></div>
+
+        <div class="Bola-amarilla am0"></div>
+        <div class="Bola-amarilla am1"></div>
+        <div class="Bola-amarilla am2"></div>
+        <div class="Bola-amarilla am3"></div>
+        <div class="Bola-amarilla am4"></div>
+        <div class="Bola-amarilla am5"></div>
+
+        <div class="Bola-verde v0"></div>
+        <div class="Bola-verde v1"></div>
+        <div class="Bola-verde v2"></div>
+        <div class="Bola-verde v3"></div>
+        <div class="Bola-verde v4"></div>
+        <div class="Bola-verde v5"></div>
+
+    </div>
+
+    
+</body>
+</html>

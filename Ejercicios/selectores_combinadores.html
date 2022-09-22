@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{ 
+            color:blue;   /*selector de discendiente nos selecciona todos los p que esten dentro del div*/
+        }
+        div > div { /* nos va a tomar el div que este adentro y seguidito de el primer div*/
+            background: plum;
+        }
+        .es {
+            background: red;
+        }
+        div + section {
+        background: green; /*el section que esta al lado del div si no esta abajo del div no lo tomara */
+        }
+        div ~ p {
+            background: paleturquoise;  /*el hermano que esta despues de div lo va a tomar si son varios seguidos los toma*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+         <div>
+        
+        <p>Welcome to the css course</p>
+        <div class="es">by platzi</div>
+    
+    </div>
+    </div>
+    <p>daniel es gay</p>
+    <p>clase de selectores</p>
+  
+    <section>
+        platzi
+    </section>
+   
+    <div>
+        master
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background: papayawhip; /* selector universal que nos atrapa todo lo que esta en el documento*/ 
+        }
+        div {
+            background: pink ;  /* selector de tipo en este caso nos va pintar todo los  div o lo que este detro de el*/
+        }
+        .titulo {
+            background: red;  /* selector de clase, podemos seleccionar atraves de la clase la etiqueta que vamos a estilizar*/
+            color: green; /*la etiqueta background para el fondo, y la etiqueta color para color de la letra */
+        }
+        #titulo2 {
+            color: gray;
+        }
+        a[href ="https://www.pexels.com/es-es/foto/astronauta-de-pie-junto-a-la-bandera-estadounidense-en-la-luna-39896/"]{
+            color: brown;   /* aplicamos estilo  al texto que nos lleva a una direccion*/
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">Hola </div>
+    <div id="titulo2">Mundo</div>
+    <a href="https://www.pexels.com/es-es/foto/astronauta-de-pie-junto-a-la-bandera-estadounidense-en-la-luna-39896/"> ve a ver la luna</a>
+</body>
+</html>

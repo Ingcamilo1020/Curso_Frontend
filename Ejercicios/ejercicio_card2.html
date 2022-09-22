@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+         
+    }
+    #card{
+        width:500px;
+        height: 600px;
+        background: #0a090a;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    .fondo{
+        
+        width: 100%;
+        height: 45vh;
+        margin-top: -70px;
+        
+        background: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-repeat: no-repeat;
+        border-radius: 40px 40px 0 0; 
+        
+
+    }
+
+            
+    #card .perfil .foto{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        
+       margin:0 auto;
+       margin-top: -95px;
+       border: 1px solid white; 
+    }
+    #card .perfil h1{
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(222, 206, 206);
+
+    }
+    #card .perfil h2{
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(222, 206, 206);
+    }
+    #card .perfil p{
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(222, 206, 206);
+    }
+    #card .links{
+        display: inline-flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        
+
+    }
+    #card .links  div > a{
+        color: rgb(222, 206, 206);
+        text-decoration: none;
+        cursor: pointer;
+
+
+    }
+    #card .links div > a:hover{
+        color:white;
+    }
+    #card .footer{
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.889);
+
+        display: inline-flex ;
+        justify-content: space-around;
+        align-items: center;
+        color: rgb(222, 206, 206);
+        border: 2px solid black;
+    }
+    #card #footer2{
+        background-color: rgba(228, 0, 0, 0.889);
+        width: 100%;
+        height: 80px;
+        color: rgb(222, 206, 206);
+        
+
+        display: flex;
+        justify-content: center;
+        
+    }
+    @media (max-width:800px){
+        #card #footer2{
+            background: green;
+        }
+
+    }
+  
+    #card #footer2 :hover{
+        color:white;
+    }
+    #card #footer2:hover{
+        font-weight: bold;
+        transition: 200ms;
+        font-size: 1.7em;
+    }
+    .img{
+        width: 20px;
+        height: 10px;
+
+    }
+
+  
+</style>
+</head>
+<body>
+    <section id="card">
+        <div class="fondo"></div>
+        <div class="perfil">
+            <img class="foto" src="/imagenes/CAMILO.png" alt="profile">
+            <h1>Jhoann Camilo Meza Valencia</h1>
+            <h2> Frontend Developer  👾</h2>
+            <p>  <img class="img "src="/imagenes/colombia.png" alt=""> Colombia</p>
+        </div>
+
+        <div class="links"> 
+            <div> <a href="#">Projects</a></div>
+            <div> <a href="#">Send email</a></div>
+        </div>
+        <div class="footer">
+            <div class="izquierdo">
+                <p>500</p>
+                <span>Follows</span>
+            </div>
+            <div class="derecho">
+                <p>1000</p>
+                <span>Followers</span>
+            </div>
+        </div>
+        <div id="footer2">Follow </div>
+    </section>
+</body>
+</html>

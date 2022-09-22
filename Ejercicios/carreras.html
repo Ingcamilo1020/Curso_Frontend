@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #61B111;
+        }
+        #container, .carretera{
+            background: papayawhip;
+            width:800px;
+            height: 2500px;
+            
+            
+        }
+        #container{
+            position: relative;
+            left: 400px; 
+            top:10px; 
+            
+        }
+
+        .carretera{
+            position: absolute;
+            
+        }
+        #alineacion{
+            position:absolute;
+           
+
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            justify-content: center;
+
+
+            
+            
+            
+            
+           
+
+            top:130px;
+            left:250px;
+            box-sizing: border-box;
+            
+        }
+
+       
+        #filas{
+            position: sticky;
+            top:200px;
+
+
+
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .carro{
+            width:150px;
+            height: 200px;
+        }
+
+
+
+     
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="carretera">
+            <img class="carretera" src="/imagenes/pista.png" alt="pista">
+        </div>
+
+        
+
+            <div id="filas" >
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+            </div>
+            <div id="filas" >
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+            </div>
+            <div id="filas" >
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+            </div>
+            <div id="filas" >
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+                <img class="carro" src="/imagenes/carro.png" alt="carrito">
+            </div>
+            
+
+    
+
+    </div>
+</body>
+</html>
