@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>:root{
+        --very-light-pink:#C7C7C7;
+        --white:#FFFFFF;
+        --black:#000000;
+        --text-input-field:#F7F7F7;
+        --hospital-green:#ACD9B2;
+        --fondo:#116979;
+
+        --sm:1.4rem;
+        --md:1.6rem;
+        --lg:1.8rem;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        html{
+            font-size: 62.5%;
+            font-family:'Quicksand', sans-serif ;
+        }
+        .main_menu{
+            width: 20rem;
+            height: auto;
+            border: .2rem solid var(--very-light-pink);
+            border-radius: .8rem;
+            padding: 2.2rem;
+        }
+        .main_menu ul{
+            
+            list-style: none;
+            
+            
+        }
+        .main_menu ul:nth-child(1){
+            border-bottom: .3rem solid var(--very-light-pink);
+            margin-top: .5rem;
+            
+        }
+        .main_menu ul:nth-child(2){
+            margin-top: 4rem;
+        }
+        .main_menu ul:nth-child(3){
+            margin-top: 10rem;
+        }
+       
+
+        .main_menu ul li{
+            margin-bottom: 2.2rem;
+        }
+        .main_menu ul:nth-child(3) li{
+            margin-bottom: .5rem;
+        }
+       
+        .main_menu ul li a{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            font-size: var(--sm);
+        }
+        .main_menu ul:last-child li a{
+            margin-top: 2rem;
+            font-weight: 300;
+            font-size: var(--sm);
+
+        }
+    
+        .main_menu ul:last-child li:last-child a{
+            color: var(--hospital-green);    
+        }
+       
+        </style>
+</head>
+<body>
+    <section class="main_menu">
+        <ul>
+            <li><a href="/">CATEGORIES</a></li>
+            <li><a href="/">All</a></li>
+            <li><a href="/">Clothes</a></li>
+            <li><a href="/">Electronics</a></li>
+            <li><a href="/">Furnitures</a></li>
+            <li><a href="/">Toys</a></li>
+            <li><a href="/">Others</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">My orders</a></li>
+            <li><a href="/">My account</a></li>
+        </ul>
+        <ul>
+            <li><a href="/" class="email" >Camilovalencia@gmail.com</a></li>
+            <li><a href="/" class="sign">Sign out</a></li>  
+        </ul>
+    </section>
+    
+</body>
+</html>

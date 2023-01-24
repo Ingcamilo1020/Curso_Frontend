@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+        --very-light-pink:#C7C7C7;
+        --white:#FFFFFF;
+        --black:#000000;
+        --text-input-field:#F7F7F7;
+        --hospital-green:#ACD9B2;   
+        --fondo:#116979;
+
+        --sm:1.4rem;
+        --md:1.6rem;
+        --lg:1.8rem;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 62.5%;
+            font-family:'Quicksand', sans-serif;
+        }
+        .main-container{
+            width: 30rem;
+            height: 100vh;
+            
+           position: absolute;
+           right: 0;
+        }
+        .main-section{
+            display: flex;
+            flex-direction: column;
+        }
+        .main-section div{
+            display: flex;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .main-section div img{
+            transform: rotate(180deg);
+            margin-right: 1.5rem;
+            cursor: pointer;
+        }
+        .main-section div p{
+            font-size: var(--lg);
+            font-weight: bold;
+            
+        }
+        .product-section img{
+            width: 7rem;
+            height: 7rem;
+            border-radius: .8rem;
+          
+        }
+        .product-section{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            margin-bottom: 2rem;
+            gap: 1.6rem;
+            align-items: center;
+        }
+        .product-section p{
+            font-size: var(--md);
+        }
+        .product-section p:nth-child(2){
+            color: var(--very-light-pink);
+        }
+        .product-section p:nth-child(3){
+            font-weight: bold;
+        }
+        .second-section{
+            display: flex;
+            justify-content: space-between;
+            padding: 1.6rem;
+            border: .1rem solid var(--very-light-pink);
+            border-radius: .8rem;
+            margin-bottom: 2rem;
+        }
+        .second-section p{
+            font-size: var(--md);
+        }
+        .second-section p:nth-child(2){
+            font-weight: bold;
+        }
+        .primary-button{
+            width: 100%;
+            height: 4rem;
+            background-color: var(--hospital-green);
+            color: var(--white);
+            font-weight: bold;
+            font-size: var(--md);
+            border: none;
+            border-radius: .8rem;
+            cursor: pointer;
+
+        }
+        .product-section img:nth-child(4){
+            width: 2.5rem;
+            height: 2.5rem;
+            
+        }
+        .close:hover{
+            cursor: pointer;
+        }
+        @media (max-width:600px) {
+            .main-container{
+                width: 100%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <section class="main-section">
+            <div>
+                <img src="./practico/Platzi_YardSale_Icons/flechita.svg" alt="flechita" class="arrow">
+                <p>Shoping cart</p>
+            </div>
+            
+
+            <section class="product-section">
+                <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="product" class="img-product">
+
+                <p>Ferrari</p>
+
+                <p>$120,00</p>
+
+                <img src="./practico/Platzi_YardSale_Icons/icon_close.png" alt="cerrar" class="close">
+
+            </section>
+            <section class="product-section">
+                <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="product" class="img-product">
+
+                <p>Ferrari</p>
+
+                <p>$120,00</p>
+
+                <img src="./practico/Platzi_YardSale_Icons/icon_close.png" alt="cerrar" class="close">
+
+            </section>
+            <section class="product-section">
+                <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="product" class="img-product">
+
+                <p>Ferrari</p>
+
+                <p>$120,00</p>
+
+                <img src="./practico/Platzi_YardSale_Icons/icon_close.png" alt="cerrar" class="close">
+
+            </section>
+            <section class="product-section">
+                <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="product" class="img-product">
+
+                <p>Ferrari</p>
+
+                <p>$120,00</p>
+
+                <img src="./practico/Platzi_YardSale_Icons/icon_close.png" alt="cerrar" class="close">
+
+            </section>
+            <section class="product-section">
+                <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                alt="product" class="img-product">
+
+                <p>Ferrari</p>
+
+                <p>$120,00</p>
+
+                <img src="./practico/Platzi_YardSale_Icons/icon_close.png" alt="cerrar" class="close">
+
+            </section>
+            
+            <section class="second-section">
+                <p>Total</p>
+                <p>$560,00</p>
+            </section>
+            <button class="primary-button">Checkout</button>
+        </section>
+    </main>
+    
+</body>
+</html>
